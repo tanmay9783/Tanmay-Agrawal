@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rockstar Band - Official Playlist</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/creative-mic-with-wings-vector-illustration-monochrome-retro-tattoo-rock-star-with-lettering_74855-10829.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+        }
+        .playlist-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .track-item {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        .track-item:hover {
+            transform: translateX(10px) rotateY(5deg);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 py-12">
+    <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold text-center mb-12 gradient-text">Our Musical Journey</h1>
+        
+        <div class="playlist-container rounded-xl p-8 shadow-2xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-3xl mb-6 gradient-text">Top Tracks</h2>
+                    <div class="space-y-4">
+                        <div class="track-item p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold">High Rated Gabru</h3>
+                                <p class="text-gray-400">Guru Randhawa Album</p>
+                            </div>
+                            
+                            <a href="https://youtu.be/hjWf8A0YNSE?si=sNTLj4IgPOh_Ab7k"><span class="text-purple-400">3:37</span></a>
+                        </div>
+                        <div class="track-item p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold">Blue Eyes</h3>
+                                <p class="text-gray-400">Yo Yo Honey Singh Album</p>
+                            </div>
+                            <a href="https://youtu.be/NbyHNASFi6U?si=9BIogsPhzelTtnK_"><span class="text-purple-400">4:03</span></a>
+                        </div>
+                        <div class="track-item p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold">Ae Dil Hai Mushkil</h3>
+                                <p class="text-gray-400">Arijit Singh Album</p>
+                            </div>
+                            <a href="https://youtu.be/6FURuLYrR_Q?si=72V9u3KHHALI0ey2"><span class="text-purple-400">5:01</span></a>
+                        </div>
+                        <div class="track-item p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold">Subha Hone Na De</h3>
+                                <p class="text-gray-400">Mika Singh Album</p>
+                            </div>
+                            <a href="https://youtu.be/Y7G-tYRzwYY?si=BDixmtWle3orPPBH"><span class="text-purple-400">4:32</span></a>
+                        </div>
+                        <div class="track-item p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold">Narayan Mil Jayega</h3>
+                                <p class="text-gray-400">Jubin Nautiyal Album</p>
+                            </div>
+                            <a href="https://youtu.be/30YNd5fEGMo?si=-cR8qhhR5heZQ4SU"><span class="text-purple-400">5:01</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl mb-6 gradient-text">Album Highlights</h2>
+                    <div class="space-y-4">
+                        <div class="bg-black bg-opacity-30 p-6 rounded-xl">
+                            <h3 class="text-2xl mb-2">Ae Dil Hai Mushkil Title</h3>
+                            <div class="flex justify-between items-center">
+                                <button class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
+                                    <a href="https://youtu.be/6FURuLYrR_Q?si=72V9u3KHHALI0ey2" target="_blank">Listen Now </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-black bg-opacity-30 p-6 rounded-xl">
+                            <h3 class="text-2xl mb-2">Mere Ghar Ram Aaye Hain</h3>
+                            <div class="flex justify-between items-center">
+                                <button class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
+                                    <a href="https://youtu.be/vBJ5HSs-N9o?si=SNUGIPUXwbSDIPj-" target="_blank">Listen Now</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

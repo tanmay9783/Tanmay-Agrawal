@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rockstar Band - Book Your Tickets</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/creative-mic-with-wings-vector-illustration-monochrome-retro-tattoo-rock-star-with-lettering_74855-10829.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            perspective: 1000px;
+        }
+        .ticket-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+        .ticket-container:hover {
+            transform: rotateX(5deg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .form-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto p-6">
+        <h1 class="text-5xl font-bold text-center mb-12 gradient-text">Annual Concert 2024</h1>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="ticket-container p-8 rounded-xl transform transition-all duration-500">
+                <h2 class="text-3xl mb-6 gradient-text">Book Your Tickets</h2>
+                <form>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 mb-2">Select Concert</label>
+                        <select class="w-full p-3 form-input rounded-md">
+                            <option>Arijit Singh (Dec 27)</option>
+                            <option>Jubin Nautiyal (Dec 28)</option>
+                            <option>Mika Singh (Dec 29)</option>
+                            <option>Guru Randhawa (Dec 30)</option>
+                            <option>Yo Yo Honey Singh (Dec 31)</option>
+                        </select>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-300 mb-2">Number of Tickets</label>
+                            <input type="number" min="1" max="10" class="w-full p-3 form-input rounded-md">
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Ticket Type</label>
+                            <select class="w-full p-3 form-input rounded-md">
+                                <option>Standard Ticket</option>
+                                <option>VIP Experience</option>
+                                <option>Premium Seating</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="w-full bg-purple-600 text-white py-4 rounded-md hover:bg-purple-700 transition transform hover:scale-105 active:scale-95 duration-300 shadow-lg">
+                        <a href="#">Secure Your Tickets</a>
+                    </button>
+                </form>
+            </div>
+            <div>
+                <div class="bg-black bg-opacity-30 p-8 rounded-xl mb-8">
+                    <h3 class="text-2xl mb-4 gradient-text">Concert Highlights</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Exclusive new album previews
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Meet & Greet opportunities
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Limited edition merchandise
+                        </li>
+                    </ul>
+                </div>

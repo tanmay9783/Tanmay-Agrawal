@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rockstar Band</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/creative-mic-with-wings-vector-illustration-monochrome-retro-tattoo-rock-star-with-lettering_74855-10829.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <header class="bg-black bg-opacity-50 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold gradient-text flex">
+                <img src="i.jpg" alt="" height="30px" width="50x">
+                Rockstar Band</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="login.html" target="_blank" class="hover:text-purple-400 transition">Login</a></li>
+                    <li><a href="playlist.html" target="_blank" class="hover:text-purple-400 transition">Playlist</a></li>
+                    <li><a href="concerts.html" target="_blank" class="hover:text-purple-400 transition">Previous Concerts</a></li>
+                    <li><a href="tickets.html" target="_blank" class="hover:text-purple-400 transition">Book Tickets</a></li>
+                    <li><a href="contact.html" target="_blank" class="hover:text-purple-400 transition">Contact Us</a></li>
+                    <!-- <li><a href="review.html" target="_parent" class="hover:text-purple-400 transition">Contact Us</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 p-6">
+        <section class="text-center">
+            <h2 class="text-5xl font-bold mb-8 gradient-text">Rockstar Band</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img  src="r1.jpg" alt="Band Photo"
+                     class="rounded-lg shadow-2xl mx-auto transform hover:scale-105 transition duration-300 h-400 w-300">
+                </div>
+                <div class="text-left">
+                    <h3 class="text-3xl mb-4 gradient-text">Our Story</h3>
+                    <p class="text-lg mb-4">
+                        Rockstar band began in a small garage in Seattle, where five musicians with a shared dream of creating transformative music first came together. Founded in 2015, the band started as a passion project, blending rock, electronic, and indian influences.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Lead  Yo Yo Honey Singh, Guru Randhawa and Jubin Nautiyal, Mika Singh, and Arijit Singh discovered their unique sound through countless late-night jam sessions and a relentless commitment to musical innovation.
+                    </p>
+                    <a href="tickets.html" target="_blank" class="bg-purple-600 text-white px-8 py-4 rounded-full hover:bg-purple-700 transition shadow-lg">
+                        Join Our Musical Journey
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h3 class="text-4xl mb-8 gradient-text">Band Members</h3>
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <img src="r2.jpg" alt="Arijit Singh" class="rounded-full mx-auto mb-4">
+                    <h4 class="text-xl font-semibold">Arijit Singh</h4>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="r3.webp" alt="Mika Singh" class="rounded-full mx-auto mb-4">
+                    <h4 class="text-xl font-semibold">Mika Singh</h4>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="r4.jpeg" alt="Jubin Nautiyal" class="rounded-full mx-auto mb-4">
+                    <h4 class="text-xl font-semibold">Jubin Nautiyal</h4>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="r5.jpg" alt="Guru Randhawa" class="rounded-full mx-auto mb-4">
+                    <h4 class="text-xl font-semibold">Guru Randhawa</h4>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="r6.jpg" alt="Yo Yo Honey Singh" class="rounded-full mx-auto mb-4">
+                    <h4 class="text-xl font-semibold">Yo Yo Honey Singh</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Customer Reviews Section -->
+        <section class="mt-16 text-center">
+            <h3 class="text-4xl mb-8 gradient-text">Fan Reviews</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 rounded-lg text-left">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold">Sarah J.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The energy at their concert was absolutely electric! Arijit's voice gave me goosebumps, and Yo Yo Honey Singh's performance was incredible. Can't wait to see them again!"</p>
+                </div>
+
+                <div class="card p-8 rounded-lg text-left">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold">Michael R.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The fusion of different musical styles is mind-blowing. Mika Singh and Guru Randhawa's collaboration was the highlight of the evening. Pure musical genius!"</p>
+                </div>
+
+                <div class="card p-8 rounded-lg text-left">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold">Priya M.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Jubin Nautiyal's performance touched my soul. The way they blend traditional and modern elements is extraordinary. Best concert experience of my life!"</p>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <a href="review.html" class="bg-purple-600 text-white px-8 py-4 rounded-full hover:bg-purple-700 transition shadow-lg inline-block">
+                    Share Your Experience
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-50 text-white p-6 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rhythm Revolution. All Musical Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-purple-400">Facebook</a>
+                <a href="#" class="hover:text-purple-400">Instagram</a>
+                <a href="#" class="hover:text-purple-400">YouTube</a>
+                <a href="#" class="hover:text-purple-400">Spotify</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

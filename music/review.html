@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fan Reviews - Rockstar Band</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/creative-mic-with-wings-vector-illustration-monochrome-retro-tattoo-rock-star-with-lettering_74855-10829.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+        .star-rating label {
+            cursor: pointer;
+        }
+        .review-card {
+            transition: transform 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <header class="bg-black bg-opacity-50 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-4xl font-bold gradient-text">Rockstar Band</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-purple-400 transition">Home</a></li>
+                    <li><a href="playlist.html" class="hover:text-purple-400 transition">Playlist</a></li>
+                    <li><a href="concerts.html" class="hover:text-purple-400 transition">Concerts</a></li>
+                    <li><a href="tickets.html" class="hover:text-purple-400 transition">Tickets</a></li>
+                    <li><a href="contact.html" class="hover:text-purple-400 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 p-6">
+        <!-- Review Form Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 gradient-text text-center">Share Your Experience</h2>
+            <div class="card p-8 rounded-lg max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Your Name</label>
+                        <input type="text" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Concert Attended</label>
+                        <select class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+                            <option>Mumbai Unleashed - Dec 2023</option>
+                            <option>Delhi Nights - Nov 2023</option>
+                            <option>Bangalore Beats - Oct 2023</option>
+                            <option>Chennai Rhythms - Sep 2023</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Rating</label>
+                        <div class="flex space-x-2 text-2xl text-yellow-400">
+                            <label class="cursor-pointer hover:text-yellow-300">★</label>
+                            <label class="cursor-pointer hover:text-yellow-300">★</label>
+                            <label class="cursor-pointer hover:text-yellow-300">★</label>
+                            <label class="cursor-pointer hover:text-yellow-300">★</label>
+                            <label class="cursor-pointer hover:text-yellow-300">★</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Your Review</label>
+                        <textarea rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Upload Photos (optional)</label>
+                        <input type="file" multiple class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+                    </div>
+
+                    <button type="submit" class="w-full bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition shadow-lg">
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Reviews Display Section -->
+        <section>
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-4xl font-bold gradient-text">Fan Reviews</h2>
+                <div class="flex space-x-4">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Review Card 1 -->
+                <div class="card p-6 rounded-lg review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div>
+                                <h4 class="text-xl font-semibold">Rahul M.</h4>
+                                <p class="text-sm text-gray-400">Mumbai Unleashed - Dec 2023</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"An absolutely phenomenal experience! The energy was electric when Arijit Singh started 'Tum Hi Ho'. Yo Yo Honey Singh's rap segment had everyone on their feet. The sound quality was perfect, and the light show was mesmerizing."</p>
+                    <div class="flex gap-2 mt-4">
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="card p-6 rounded-lg review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div>
+                                <h4 class="text-xl font-semibold">Priya S.</h4>
+                                <p class="text-sm text-gray-400">Delhi Nights - Nov 2023</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Mika Singh and Guru Randhawa's duet was the highlight of the evening! The way they interact with the crowd is amazing. Jubin's acoustic set brought tears to my eyes. Worth every penny!"</p>
+                    <div class="flex gap-2 mt-4">
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="card p-6 rounded-lg review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div>
+                                <h4 class="text-xl font-semibold">Alex D.</h4>
+                                <p class="text-sm text-gray-400">Bangalore Beats - Oct 2023</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">★★★★☆</div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The fusion of different musical styles was mind-blowing! Each artist brought their unique flavor while maintaining perfect harmony. The crowd management could have been better, but the performance made up for it."</p>
+                </div>
+
+                <!-- Review Card 4 -->
+                <div class="card p-6 rounded-lg review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div>
+                                <h4 class="text-xl font-semibold">Sarah J.</h4>
+                                <p class="text-sm text-gray-400">Chennai Rhythms - Sep 2023</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"First time seeing them live and I'm absolutely blown away! The acoustic versions of their hits were unexpected and beautiful. The encore was spectacular!"</p>
+                    <div class="flex gap-2 mt-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-50 text-white p-6 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rhythm Revolution. All Musical Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-purple-400">Facebook</a>
+                <a href="#" class="hover:text-purple-400">Instagram</a>
+                <a href="#" class="hover:text-purple-400">YouTube</a>
+                <a href="#" class="hover:text-purple-400">Spotify</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
